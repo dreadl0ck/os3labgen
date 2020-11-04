@@ -19,3 +19,6 @@ Compile from source
 or
 
     go build
+
+or use a binary release from: https://github.com/dreadl0ck/os3labgen/releases
+
