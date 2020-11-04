@@ -31,7 +31,11 @@ func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("Dead simple tool to convert a PDF document with OS3 lab exercises into a dokuwiki template.")
 		fmt.Println("Provide the pdf as first argument, the resulting dokuwiki markup will be written to stdout.")
-		log.Fatal("usage: os3labgen <lab.pdf>")
+		fmt.Println()
+		fmt.Println("    usage: os3labgen <lab.pdf>")
+		fmt.Println()
+		fmt.Println("error: please provide a pdf as first argument")
+		os.Exit(1)
 	}
 
 	// extract text from pdf
