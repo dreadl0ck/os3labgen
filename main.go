@@ -23,7 +23,7 @@ import (
 	"code.sajari.com/docconv"
 )
 
-const version = "v1.0"
+const version = "v1.0.0"
 
 func main() {
 
