@@ -17,6 +17,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 
@@ -45,7 +46,7 @@ func main() {
 	}
 
 	// print header
-	fmt.Println("==== Lab Template for", os.Args[1], "====")
+	fmt.Println("==== Lab Template for", filepath.Base(os.Args[1]), "====")
 	fmt.Println()
 	fmt.Println("> generated at", time.Now().UTC())
 	fmt.Println("> with https://github.com/dreadl0ck/os3labgen", version)
